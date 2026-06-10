@@ -211,13 +211,13 @@ export default function Header({ locale, onLocaleChange }) {
         </div>
       </div>
       <nav className="relative hidden border-t border-white/10 lg:block">
-        <div className="no-scrollbar mx-auto flex max-w-420 gap-2 overflow-x-auto px-4 py-4 sm:px-6 lg:px-5">
+        <div className="no-scrollbar mx-auto flex max-w-470 overflow-x-auto px-4 py-4 sm:px-6 lg:px-5">
           {mainNavigation.map((item, i) => (
             <a
               key={item.label}
               onMouseEnter={() => setActive(item)}
               href={link(item.href, locale)}
-              className={`shrink-0 rounded-full px-5 py-3 text-sm font-black uppercase transition ${i === 0 ? "bg-white text-black" : "text-white hover:bg-white hover:text-black"}`}
+              className={`shrink-0 rounded-full px-5 py-3 text-sm font-black transition ${i === 0 ? "bg-white text-black" : "text-white hover:bg-white hover:text-black"}`}
             >
               {translate(item.label, locale)}
             </a>
