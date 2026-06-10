@@ -78,7 +78,7 @@ function DesktopMega({ active, onClose, locale }) {
       onMouseLeave={onClose}
       className="absolute left-0 right-0 top-full z-40 border-t border-white/10 bg-black/95 shadow-2xl backdrop-blur-xl"
     >
-      <div className="mx-auto max-w-[1680px] px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-420 px-4 sm:px-6 lg:px-10">
         <div className="flex items-start justify-between border-b border-white/10 py-4">
           <div>
             <p className="text-xs uppercase tracking-[.35em] text-neutral-500">
@@ -90,7 +90,7 @@ function DesktopMega({ active, onClose, locale }) {
           </div>
           <button
             onClick={onClose}
-            className="rounded-full p-2 text-neutral-400 hover:bg-white hover:text-black"
+            className="rounded-full p-2 text-neutral-400 hover:bg-white hover:text-black cursor-pointer"
           >
             <X size={20} />
           </button>
@@ -122,7 +122,7 @@ export default function Header({ locale, onLocaleChange }) {
   return (
     <header className="sticky top-0 z-50 bg-black text-white">
       <div className="border-b border-white/10">
-        <div className="mx-auto flex max-w-[1680px] items-center justify-between gap-4 px-4 py-3 text-xs font-bold sm:px-6 lg:px-10">
+        <div className="mx-auto flex max-w-420 items-center justify-between gap-4 px-4 py-3 text-xs font-bold sm:px-6 lg:px-10">
           <div className="hidden items-center gap-5 lg:flex">
             <span>{localeData.orderHotline}</span>
             <a
@@ -165,7 +165,7 @@ export default function Header({ locale, onLocaleChange }) {
           </div>
         </div>
       </div>
-      <div className="mx-auto grid max-w-[1680px] grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-5 sm:px-6 lg:px-10">
+      <div className="mx-auto grid max-w-420 grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-5 sm:px-6 lg:px-10">
         <a href={base} className="flex items-center">
           <img
             src="/print-mobil.png"
@@ -212,7 +212,7 @@ export default function Header({ locale, onLocaleChange }) {
         </div>
       </div>
       <nav className="relative hidden border-t border-white/10 lg:block">
-        <div className="no-scrollbar mx-auto flex max-w-[1680px] gap-2 overflow-x-auto px-4 py-4 sm:px-6 lg:px-10">
+        <div className="no-scrollbar mx-auto flex max-w-420 gap-2 overflow-x-auto px-4 py-4 sm:px-6 lg:px-5">
           {mainNavigation.map((item, i) => (
             <a
               key={item.label}

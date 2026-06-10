@@ -20,7 +20,7 @@ export const translations = {
     menuLabel: "Menü",
     close: "Schließen",
     pageTitle: "Demo Header",
-    pageDescription: "Print Equipment Header mit React + Tailwind.",
+    pageDescription: "Print Equipment Header Rework",
     orderHotline: "Bestellhotline: +49 7223 2815 0",
   },
   EN: {
