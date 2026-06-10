@@ -10,14 +10,13 @@ import {
   X,
 } from "lucide-react";
 import { useState } from "react";
-import { localePaths, translate, translations } from "../data/i18n.js";
+import { translate, translateHref, translations } from "../data/i18n.js";
 import { languages, mainNavigation } from "../data/navigation.js";
 
 const base = "https://shop.printequipment.de";
 const link = (href, locale) => {
   if (href?.startsWith("http") || href === "#") return href;
-  const localePrefix = locale === "DE" ? "" : localePaths[locale] || "";
-  return `${base}${localePrefix}${href}`;
+  return `${base}${translateHref(href, locale)}`;
 };
 
 function Badge({ children }) {
