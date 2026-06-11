@@ -263,10 +263,12 @@ export const mainNavigation = [
     label: "UV Druck",
     href: "/UV-Druck/",
     children: [
-      ...["UV Direktdrucksysteme", "UV-DTF"].map((x) => ({
-        label: x,
-        href: "#",
-      })),
+      ...["UV Direktdrucksysteme", "UV-DTF-Rollensysteme", "UV-DTF"].map(
+        (x) => ({
+          label: x,
+          href: "#",
+        }),
+      ),
       {
         label: "UV Tinte",
         href: "#",
