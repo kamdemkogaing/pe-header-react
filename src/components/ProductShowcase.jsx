@@ -5,26 +5,26 @@ const packages = [
   {
     id: "standalone",
     title: "F2 Ultra UV Standalone",
-    price: "€3.959,00",
-    saved: "€600,00",
-    oldPrice: "€4.559,00",
-    monthly: "€187/Mo. in 24 Raten",
+    price: "3.959,00€",
+    saved: "600,00€",
+    oldPrice: "4.559,00€",
+    monthly: "187€/Mo. in 24 Raten",
   },
   {
     id: "conveyor",
     title: "F2 Ultra UV + Conveyor",
-    price: "€4.439,00",
-    saved: "€600,00",
-    oldPrice: "€5.039,00",
-    monthly: "€210/Mo. in 24 Raten",
+    price: "4.439,00€",
+    saved: "600,00€",
+    oldPrice: "5.039,00€",
+    monthly: "210€/Mo. in 24 Raten",
   },
   {
     id: "deluxe",
     title: "F2 Ultra UV Deluxe Bundle",
-    price: "€5.679,00",
-    saved: "€600,00",
-    oldPrice: "€6.279,00",
-    monthly: "€236/Mo. in 24 Raten",
+    price: "5.679,00€",
+    saved: "600,00€",
+    oldPrice: "6.279,00€",
+    monthly: "236€/Mo. in 24 Raten",
   },
 ];
 
@@ -59,16 +59,16 @@ export default function ProductShowcase() {
   const increaseQuantity = () => setQuantity((value) => value + 1);
 
   return (
-    <section className="mx-auto max-w-450 px-4 py-10 sm:px-6 lg:px-10">
+    <section className="mx-auto max-w-450 px-4 py-30 sm:px-6 lg:px-10">
       <div className="grid gap-10 lg:grid-cols-[1.2fr_0.75fr]">
         <div className="space-y-6">
           <div className="overflow-hidden rounded-[2.5rem] border border-black/10 bg-[#090909] p-6 shadow-[0_40px_120px_-45px_rgba(0,0,0,0.45)]">
             <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
               <div className="space-y-6">
                 <div className="space-y-5">
-                  <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.35em] text-white/70">
+                  {/* <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.35em] text-white/70">
                     xTool F2 Ultra UV
-                  </div>
+                  </div> */}
                   <div className="space-y-4">
                     <h1 className="text-3xl font-black tracking-tight text-white sm:text-3xl">
                       xTool F2 Ultra UV 5 W UV-Lasergravierer
@@ -99,26 +99,26 @@ export default function ProductShowcase() {
                 </ul>
 
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-4xl border border-white/10 bg-white p-6 text-black shadow-[0_18px_40px_-24px_rgba(0,0,0,0.2)]">
-                    <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">
+                  <div className="rounded-4xl border border-white/10 bg-white p-4 text-black shadow-[0_18px_40px_-24px_rgba(0,0,0,0.2)]">
+                    <p className="text-xs uppercase tracking-widest text-neutral-500">
                       Final Price
                     </p>
-                    <p className="mt-4 text-2xl font-black">€3.959,00</p>
-                    <p className="mt-2 text-sm text-neutral-500">inkl. MwSt.</p>
+                    <p className="mt-2 text-2xl font-black">3.959,00€</p>
+                    <p className="mt-1 text-sm text-neutral-500">inkl. MwSt.</p>
                   </div>
-                  <div className="overflow-hidden rounded-4xl border border-white/10 bg-neutral-950 p-6 text-white shadow-[0_18px_40px_-24px_rgba(0,0,0,0.35)]">
-                    <p className="text-xs uppercase tracking-[0.35em] text-neutral-400">
+                  <div className="overflow-hidden rounded-4xl border border-white/10 bg-neutral-950 p-4 text-white shadow-[0_18px_40px_-24px_rgba(0,0,0,0.35)]">
+                    <p className="text-xs uppercase tracking-widest text-neutral-400">
                       UVP
                     </p>
-                    <p className="mt-4 text-2xl font-black">€4.559,00</p>
-                    <p className="mt-3 text-sm text-neutral-400">
-                      Gespart <span className="font-black">€600,00</span>
+                    <p className="mt-2 text-2xl font-black">4.559,00€</p>
+                    <p className="mt-1 text-sm text-neutral-400">
+                      Gespart <span className="font-black">600,00€</span>
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="rounded-[2.5rem] border border-white/10 bg-white p-5 text-black shadow-[0_18px_40px_-24px_rgba(0,0,0,0.12)]">
+              <div className="rounded-xl border border-white/10 bg-white p-5 text-black shadow-[0_18px_40px_-24px_rgba(0,0,0,0.12)]">
                 <div className="relative overflow-hidden rounded-4xl p-6">
                   <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-white/10 blur-2xl"></div>
                   <div className="flex h-130 gap-5">
@@ -129,12 +129,12 @@ export default function ProductShowcase() {
                     />
                   </div>
                 </div>
-                <div className="mt-5 grid grid-cols-4 gap-3">
+                <div className="mt-20 grid grid-cols-4 gap-3">
                   {Array.from({ length: 4 }, (_, idx) => (
                     <button
                       key={idx}
                       type="button"
-                      className="cursor-pointer rounded-2xl border border-black/10 bg-neutral-100 text-sm text-neutral-700 transition hover:border-black/20 hover:bg-neutral-200"
+                      className="cursor-pointer rounded-xl border border-black/10 bg-neutral-100 text-sm text-neutral-700 transition hover:border-black/20 hover:bg-neutral-200"
                     >
                       Bild {idx + 1}
                     </button>
@@ -147,15 +147,15 @@ export default function ProductShowcase() {
           <div className="overflow-hidden rounded-[2.5rem] border border-black/10 bg-white p-6 shadow-[0_35px_80px_-40px_rgba(0,0,0,0.2)]">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">
+                <p className="text-xs uppercase tracking-widest text-neutral-500">
                   Package
                 </p>
-                <h2 className="mt-2 text-2xl font-black">
+                <h2 className="mt-2 text-xl font-black">
                   Wählen Sie Ihr Bundle
                 </h2>
               </div>
-              <span className="inline-flex items-center rounded-full bg-black px-4 py-2 text-xs font-black uppercase tracking-[0.35em] text-white">
-                Gespart €600,00
+              <span className="inline-flex items-center rounded-full bg-black px-4 py-2 text-xs font-black uppercase tracking-widest text-white">
+                Gespart 600,00€
               </span>
             </div>
             <div className="mt-6 space-y-4">
@@ -170,7 +170,7 @@ export default function ProductShowcase() {
                       : "border-black/10 bg-white text-black hover:border-black/50 hover:bg-neutral-50"
                   }`}
                 >
-                  <div className="absolute right-5 top-5 rounded-full bg-red-600 px-3 py-1 text-xs font-black uppercase tracking-[0.35em] text-white">
+                  <div className="absolute right-5 top-5 rounded-full bg-red-600 px-3 py-1 text-xs font-black uppercase tracking-widest text-white">
                     Gespart
                   </div>
                   <div className="flex items-center justify-between gap-4">
@@ -233,10 +233,10 @@ export default function ProductShowcase() {
           <div className="overflow-hidden rounded-[2.5rem] border border-black/10 bg-white p-6 shadow-[0_35px_80px_-40px_rgba(0,0,0,0.2)]">
             <div className="space-y-4">
               <div>
-                <p className="text-xs uppercase tracking-[0.35em] text-neutral-500">
+                <p className="text-xs uppercase tracking-widest text-neutral-500">
                   Sofort bestellen
                 </p>
-                <h2 className="mt-2 text-3xl font-black">Jetzt sichern</h2>
+                <h2 className="mt-2 text-2xl font-black">Jetzt sichern</h2>
               </div>
               <div className="grid gap-3 rounded-[1.75rem] border border-neutral-200 bg-neutral-50 p-5">
                 {highlights.map((item) => (
@@ -244,7 +244,7 @@ export default function ProductShowcase() {
                     key={item.text}
                     className="flex items-start gap-3 text-sm text-neutral-700"
                   >
-                    <div className="mt-1 grid h-8 w-8 place-items-center rounded-2xl bg-black text-white">
+                    <div className="mt-1 grid h-5 w-5 place-items-center rounded-2xl bg-black text-white">
                       <CheckCircle className="h-4 w-4" />
                     </div>
                     <span>{item.text}</span>
