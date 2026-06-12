@@ -33,7 +33,7 @@ const bullets = [
   "Unvergleichliche Materialkompatibilität. Kompatibel mit Kristall, Glas, Keramik, Acryl, Kunststoff, Metall, Holz und mehr.",
   "Mikrometergenaue Präzision, makellose Details. 100+ feiner als herkömmliche Laser und erfasst jedes Detail.",
   "Keine Brandspuren, saubere Ergebnisse. Kaltbearbeitung ohne Vorbehandlung oder Polieren — Perfektion in einem Schritt.",
-  "Benutzerfreundlich. Zwei 48‑MP‑Kameras, 2D‑zu‑3D‑Umwandlung per Klick, 15.000 mm/s Geschwindigkeit und großer Arbeitsbereich.",
+  "Benutzerfreundlich. Zwei 48-MP-Kameras, 2D-zu-3D-Umwandlung per Klick, 15.000 mm/s Geschwindigkeit und großer Arbeitsbereich.",
 ];
 
 const highlights = [
@@ -66,9 +66,6 @@ export default function ProductShowcase() {
             <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
               <div className="space-y-6">
                 <div className="space-y-5">
-                  {/* <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.35em] text-white/70">
-                    xTool F2 Ultra UV
-                  </div> */}
                   <div className="space-y-4">
                     <h1 className="text-3xl font-black tracking-tight text-white sm:text-3xl">
                       xTool F2 Ultra UV 5 W UV-Lasergravierer
@@ -101,7 +98,7 @@ export default function ProductShowcase() {
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="rounded-4xl border border-white/10 bg-white p-4 text-black shadow-[0_18px_40px_-24px_rgba(0,0,0,0.2)]">
                     <p className="text-xs uppercase tracking-widest text-neutral-500">
-                      Final Price
+                      Final Preis
                     </p>
                     <p className="mt-2 text-2xl font-black">3.959,00€</p>
                     <p className="mt-1 text-sm text-neutral-500">inkl. MwSt.</p>
@@ -129,6 +126,7 @@ export default function ProductShowcase() {
                     />
                   </div>
                 </div>
+
                 <div className="mt-20 grid grid-cols-4 gap-3">
                   {Array.from({ length: 4 }, (_, idx) => (
                     <button
@@ -158,6 +156,7 @@ export default function ProductShowcase() {
                 Gespart 600,00€
               </span>
             </div>
+
             <div className="mt-6 space-y-4">
               {packages.map((pkg) => (
                 <button
@@ -173,58 +172,24 @@ export default function ProductShowcase() {
                   <div className="absolute right-5 top-5 rounded-full bg-red-600 px-3 py-1 text-xs font-black uppercase tracking-widest text-white">
                     Gespart
                   </div>
+
                   <div className="flex items-center justify-between gap-4">
                     <span className="text-base font-black">{pkg.title}</span>
                     <span className="text-sm uppercase tracking-[0.35em] text-neutral-500">
                       {pkg.saved}
                     </span>
                   </div>
+
                   <div className="flex flex-wrap items-end gap-3">
                     <p className="text-2xl font-black">{pkg.price}</p>
                     <p className="text-sm text-neutral-500 line-through">
                       {pkg.oldPrice}
                     </p>
                   </div>
+
                   <p className="text-sm text-neutral-500">{pkg.monthly}</p>
                 </button>
               ))}
-            </div>
-
-            <div className="mt-6 rounded-4xl bg-neutral-950 p-4 text-white shadow-[0_20px_50px_-30px_rgba(0,0,0,0.4)]">
-              <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3 rounded-3xl border border-white/10 bg-white/5 p-3">
-                <button
-                  type="button"
-                  onClick={decreaseQuantity}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-black text-white transition hover:border-white/20"
-                >
-                  <Minus className="h-4 w-4" />
-                </button>
-                <span className="text-center text-lg font-black">
-                  {quantity}
-                </span>
-                <button
-                  type="button"
-                  onClick={increaseQuantity}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-black text-white transition hover:border-white/20"
-                >
-                  <Plus className="h-4 w-4" />
-                </button>
-              </div>
-
-              <div className="mx-auto max-w-sm grid gap-3 sm:grid-cols-2">
-                <button
-                  type="button"
-                  className="w-full rounded-3xl bg-emerald-500 px-5 py-4 text-sm font-black uppercase tracking-[0.35em] text-white shadow-[0_18px_40px_-24px_rgba(16,185,129,0.35)] transition hover:bg-emerald-400"
-                >
-                  In den Warenkorb
-                </button>
-                <button
-                  type="button"
-                  className="w-full rounded-3xl bg-[#ffe18d] px-5 py-4 text-sm font-black uppercase tracking-[0.35em] text-black shadow-[0_18px_40px_-24px_rgba(0,0,0,0.2)] transition hover:bg-[#ffea9e]"
-                >
-                  Mit PayPal bezahlen
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -238,6 +203,7 @@ export default function ProductShowcase() {
                 </p>
                 <h2 className="mt-2 text-2xl font-black">Jetzt sichern</h2>
               </div>
+
               <div className="grid gap-3 rounded-[1.75rem] border border-neutral-200 bg-neutral-50 p-5">
                 {highlights.map((item) => (
                   <div
@@ -251,6 +217,7 @@ export default function ProductShowcase() {
                   </div>
                 ))}
               </div>
+
               <div className="rounded-[1.75rem] border border-black/10 bg-black p-6 text-white shadow-[0_20px_50px_-30px_rgba(0,0,0,0.6)]">
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <div>
@@ -261,12 +228,14 @@ export default function ProductShowcase() {
                       600€ Rabatt & Gratisgeschenk
                     </p>
                   </div>
+
                   <div className="grid grid-cols-3 gap-2 text-center text-xs uppercase tracking-[0.35em] text-white/80">
                     <div className="rounded-3xl bg-white/10 px-3 py-2">03</div>
                     <div className="rounded-3xl bg-white/10 px-3 py-2">10</div>
                     <div className="rounded-3xl bg-white/10 px-3 py-2">56</div>
                   </div>
                 </div>
+
                 <p className="mt-4 text-sm text-white/70">
                   Jetzt bestellen und Chance auf eine Gratis-Bestellung sichern.
                 </p>
@@ -274,6 +243,50 @@ export default function ProductShowcase() {
             </div>
           </div>
         </aside>
+
+        <div className="lg:justify-self-end">
+          <div className="w-full max-w-140 rounded-4xl border border-neutral-200 bg-white p-4 shadow-[0_25px_80px_-35px_rgba(0,0,0,0.35)]">
+            <div className="grid gap-4">
+              <div className="grid gap-4 sm:grid-cols-[130px_1fr]">
+                <div className="flex items-center justify-between rounded-full border border-neutral-300 bg-white px-3 py-2">
+                  <button
+                    type="button"
+                    onClick={decreaseQuantity}
+                    className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100 transition hover:bg-neutral-200"
+                  >
+                    <Minus className="h-4 w-4 text-neutral-700" />
+                  </button>
+
+                  <span className="text-base font-black text-black">
+                    {quantity}
+                  </span>
+
+                  <button
+                    type="button"
+                    onClick={increaseQuantity}
+                    className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100 transition hover:bg-neutral-200"
+                  >
+                    <Plus className="h-4 w-4 text-neutral-700" />
+                  </button>
+                </div>
+
+                <button
+                  type="button"
+                  className="w-full rounded-full bg-[#28C84D] px-6 py-4 text-base font-bold text-white transition hover:bg-[#21b742]"
+                >
+                  In den Warenkorb
+                </button>
+              </div>
+
+              <button
+                type="button"
+                className="w-full rounded-full bg-[#FFC439] py-4 text-lg font-bold text-[#003087] transition hover:bg-[#ffcf55] cursor-pointer"
+              >
+                PayPal
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
